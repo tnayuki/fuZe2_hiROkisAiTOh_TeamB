@@ -2346,15 +2346,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 8284208521925498989e2dd7a208871d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .840145111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8284208521925498989e2dd7a208871d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.34229875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8284208521925498989e2dd7a208871d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .675080776
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8284208521925498989e2dd7a208871d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2488,6 +2488,120 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527682882}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &641618164
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: audioFiles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: midiFiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: a07388db33f1a406faef200cbade60cc, type: 3}
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: midiFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 38092352837994f008dc1328b0a2497a, type: 3}
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: audioFiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4c30f7bc5de848a786989d83af1d04c, type: 3}
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: masterMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 2506c9b2740b44676be8e5aa0a968be7, type: 3}
+    - target: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+      propertyPath: playMasterMusic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+  m_RootGameObject: {fileID: 795579564}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &795579564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+  m_PrefabInternal: {fileID: 641618164}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 795579566}
+  - 114: {fileID: 795579565}
+  m_Layer: 0
+  m_Name: MidiSequencer_B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &795579565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a94cb0e95e17347eeaefe6ead0df16c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 641618164}
+  m_GameObject: {fileID: 795579564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8c14e00e3c14099b825b5c1ff2f87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  midiFiles:
+  - {fileID: 4900000, guid: a07388db33f1a406faef200cbade60cc, type: 3}
+  - {fileID: 4900000, guid: 38092352837994f008dc1328b0a2497a, type: 3}
+  audioFiles:
+  - {fileID: 8300000, guid: b4c30f7bc5de848a786989d83af1d04c, type: 3}
+  bpm: 107
+  startTime: 0
+  receiveStartEvent: 0
+  volume: 1
+  playMasterMusic: 1
+  masterMusic: {fileID: 8300000, guid: 2506c9b2740b44676be8e5aa0a968be7, type: 3}
+--- !u!4 &795579566
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: a94cb0e95e17347eeaefe6ead0df16c9, type: 2}
+  m_PrefabInternal: {fileID: 641618164}
+  m_GameObject: {fileID: 795579564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &804350904
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,7 +3063,7 @@ Transform:
   m_PrefabInternal: {fileID: 198943996}
   m_GameObject: {fileID: 2031796748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .840145111, y: 1.34229875, z: .675080776}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
