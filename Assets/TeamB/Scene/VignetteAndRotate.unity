@@ -1134,8 +1134,9 @@ GameObject:
   - 114: {fileID: 147}
   - 114: {fileID: 150}
   - 114: {fileID: 151}
-  - 114: {fileID: 152}
   - 114: {fileID: 167}
+  - 114: {fileID: 168}
+  - 114: {fileID: 169}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2003,10 +2004,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76}
   m_LocalRotation: {x: .0242285933, y: 0, z: 0, w: .999706447}
-  m_LocalPosition: {x: -.111863077, y: -.0653480291, z: -1.43085015}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 817666325}
+  m_Father: {fileID: 2124408807}
 --- !u!20 &149
 Camera:
   m_ObjectHideFlags: 0
@@ -2084,39 +2085,6 @@ MonoBehaviour:
   separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
   chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
     type: 3}
---- !u!114 &152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 76}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 035b8743605fc4504bc9ffe599bbe4f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 853855959}
-  source: {fileID: 853855962}
-  sourceType: 0
-  m_boost: 1
-  boostByOtherSource: 0
-  boostSource: {fileID: 0}
-  limitMinMax: 0
-  valueMin: 0
-  valueMax: 1
-  middleOffset: 0
-  rest: 0
-  restStrength: .980000019
-  lastReturnedValue: 0
-  negative: 0
-  multiple: 0
-  targets: []
-  isModifierEnabled: 1
-  thType: 3
-  threshold: .25
-  semaphore: 0
-  trigerDelaySec: 0
-  componentToOnOff: {fileID: 150}
 --- !u!81 &153
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2453,6 +2421,54 @@ MonoBehaviour:
   radius: {x: .460000008, y: .389999986}
   angle: 18.1800003
   center: {x: .589999974, y: .5}
+--- !u!114 &168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b64d0077f924432b137254f74c75a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_amount: {x: 1, y: 1}
+  m_cycleSpeed: 80
+  m_cycleOffset: 3
+--- !u!114 &169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b37b2e41de0e45399dcfb2665bb9ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 853855959}
+  source: {fileID: 853855962}
+  sourceType: 0
+  m_boost: 1
+  boostByOtherSource: 0
+  boostSource: {fileID: 0}
+  limitMinMax: 0
+  valueMin: 0
+  valueMax: 1
+  middleOffset: 0
+  rest: 0
+  restStrength: .980000019
+  lastReturnedValue: 0
+  negative: 0
+  multiple: 0
+  targets: []
+  isModifierEnabled: 1
+  thType: 3
+  threshold: .25
+  semaphore: 0
+  trigerDelaySec: 0
+  objectToSend: {fileID: 0}
+  message: FireTremble
 --- !u!1 &49415022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,7 +3227,7 @@ Transform:
   m_LocalPosition: {x: .111863077, y: 1.4198575, z: -.525982022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 148}
+  - {fileID: 2124408807}
   m_Father: {fileID: 0}
 --- !u!114 &817666326
 MonoBehaviour:
@@ -3338,7 +3354,7 @@ MonoBehaviour:
   previous: 0
   diff: 0
   m_sensorField: {fileID: 1736474100}
-  m_axis: 3
+  m_axis: 5
 --- !u!114 &853855965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4530,3 +4546,30 @@ MonoBehaviour:
   trigerDelaySec: 0
   objectToSend: {fileID: 0}
   message: SetSpeed
+--- !u!1 &2124408806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2124408807}
+  m_Layer: 0
+  m_Name: CameraDisplacement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2124408807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2124408806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.29281712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 148}
+  m_Father: {fileID: 817666325}
