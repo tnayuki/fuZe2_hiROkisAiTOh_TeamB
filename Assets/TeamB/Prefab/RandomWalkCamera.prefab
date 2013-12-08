@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  randomRange: 5
+  randomRange: 3
   time_sec: 1
   easeType: 2
   execute: 0
@@ -146,10 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowIntensity: 1.11000001
-  blurIterations: 30
+  glowIntensity: 1.15999997
+  blurIterations: 25
   blurSpread: 1
-  glowTint: {r: 0, g: 1, b: .875862122, a: 0}
+  glowTint: {r: .367647052, g: .225994825, b: .013516427, a: 0}
   compositeShader: {fileID: 4800000, guid: 96ca71e39c7b6fb4f9bec2c5bf331349, type: 3}
   blurShader: {fileID: 4800000, guid: fb52973118cf00648825ced2fcca240c, type: 3}
   downsampleShader: {fileID: 4800000, guid: b14b79b8936134d3f8238f0c2d40d634, type: 3}
@@ -164,10 +164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowIntensity: 1.76999998
-  blurIterations: 5
+  glowIntensity: 1.49000001
+  blurIterations: 3
   blurSpread: 1
-  glowTint: {r: .75, g: .110294133, b: .110294133, a: 0}
+  glowTint: {r: .639482141, g: .79411763, b: .0934255943, a: 0}
   compositeShader: {fileID: 4800000, guid: 96ca71e39c7b6fb4f9bec2c5bf331349, type: 3}
   blurShader: {fileID: 4800000, guid: fb52973118cf00648825ced2fcca240c, type: 3}
   downsampleShader: {fileID: 4800000, guid: b14b79b8936134d3f8238f0c2d40d634, type: 3}
