@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowIntensity: 1.89999998
-  blurIterations: 8
-  blurSpread: .699999988
+  glowIntensity: 1.76999998
+  blurIterations: 5
+  blurSpread: 1
   glowTint: {r: .75, g: .110294133, b: .110294133, a: 0}
   compositeShader: {fileID: 4800000, guid: 96ca71e39c7b6fb4f9bec2c5bf331349, type: 3}
   blurShader: {fileID: 4800000, guid: fb52973118cf00648825ced2fcca240c, type: 3}
