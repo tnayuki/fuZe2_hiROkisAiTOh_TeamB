@@ -1,6 +1,7 @@
 Assets/Music*
 Library
 Temp
+*.csproj
 *.pidb
 *.unityproj
 *.sln
