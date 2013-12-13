@@ -2539,6 +2539,7 @@ GameObject:
   - 4: {fileID: 853855958}
   - 114: {fileID: 853855959}
   - 114: {fileID: 853855965}
+  - 114: {fileID: 853855963}
   - 114: {fileID: 853855960}
   - 114: {fileID: 853855961}
   - 114: {fileID: 853855962}
@@ -2626,6 +2627,24 @@ MonoBehaviour:
   diff: 0
   m_sensorField: {fileID: 1736474100}
   m_axis: 3
+--- !u!114 &853855963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853855957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a0540477b0488bab7cd15bd33509b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceName: PlayAudio
+  boost: 1
+  current: 0
+  previous: 0
+  diff: 0
+  m_sensorField: {fileID: 1736474100}
+  m_axis: 5
 --- !u!114 &853855965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2659,6 +2678,7 @@ GameObject:
   - 114: {fileID: 918432635}
   - 114: {fileID: 918432634}
   - 114: {fileID: 918432633}
+  - 114: {fileID: 918432640}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -2808,6 +2828,136 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
+--- !u!114 &918432640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: c7d5079303d3943e4acbd76e970cf7c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1514041350}
+  m_GameObject: {fileID: 918432631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b39678ff6aa4fec8d135d231ba9cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  greenChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  blueChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  useDepthCorrection: 1
+  zCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  depthRedChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  depthGreenChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  depthBlueChannel:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  saturation: 2.25999999
+  selectiveCc: 0
+  selectiveFromColor: {r: 1, g: 1, b: 1, a: 1}
+  selectiveToColor: {r: 1, g: 1, b: 1, a: 1}
+  mode: 1
+  updateTextures: 1
+  colorCorrectionCurvesShader: {fileID: 4800000, guid: 62bcade1028c24ca1a39760ed84b9487,
+    type: 3}
+  simpleColorCorrectionCurvesShader: {fileID: 4800000, guid: 438ddd58d82c84d9eb1fdc56111702e1,
+    type: 3}
+  colorCorrectionSelectiveShader: {fileID: 4800000, guid: e515e0f94cefc4c0db54b45cba621544,
+    type: 3}
 --- !u!1 &1061345465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,7 +3392,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2031796752}
+  m_Father: {fileID: 0}
 --- !u!114 &1754086681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,7 +3426,7 @@ MonoBehaviour:
   semaphore: 0
   trigerDelaySec: 0
   objectToSend: {fileID: 0}
-  message: DoPlayAudio
+  message: FirePlayAudio
 --- !u!114 &1754086682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3431,8 +3581,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1754086680}
+  m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &2031796756
 MonoBehaviour:
